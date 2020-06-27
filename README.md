@@ -1,42 +1,64 @@
-# SantriCyber
-Berawal Dari Kegagalan..# -*- coding: utf-8 -*-
+#!/bin/bash
+#variable warna
+#gunakan script ini dengan bijak
+#created by Tn S4N7RI
+#github : https://github.com/rangermerah954
+#thanks to : Alloh Swt
+#terimakasih
+#recode tidak akan membuat mu bisa menjadi seorang programer
 
-# recode by Mr.S4N75I
+me="\033[31;1m"
+hi="\033[32;1m"
+ku="\033[33;1m"
+bi="\033[34;1m"
+un="\033[35;1m"
+cy="\033[36;1m"
+pu="\033[37;1m"
 
-import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
+clear
 
-from multiprocessing.pool import ThreadPool
+awal(){
+echo $bi
+banner
+sleep 0.01
+echo $hi"[1]$ku Install Bahan";
+sleep 0.01
+echo $hi"[2]$ku Sudah Install";
+sleep 0.01
+echo $hi"[3]$ku Updates Script";
+sleep 0.01
+echo $hi"[4]$ku Contact Person";
+sleep 0.01
+echo $hi"[0]$ku exit";
+sleep 0.01
+echo $hi
+read -p "masukan pilihan : " pilih
+}
 
-from requests.exceptions import ConnectionError
+ulang(){
+ulang="s"
+while [ $ulang = "s" ];
+do
+	sleep 0.01
+done
+}
 
-from mechanize import Browser
+banner(){
+echo """
+              ███╗   ███╗███████╗███████╗
+              ████╗ ████║██╔════╝██╔════╝
+              ██╔████╔██║███████╗█████╗
+              ██║╚██╔╝██║╚════██║██╔══╝
+              ██║ ╚═╝ ██║███████║██║
+              ╚═╝     ╚═╝╚══════╝╚═╝
+              S4N751 Code Indonesia
+$bi"————————————————————————————————————————————————————"
+$me"Author"     ":"    	              $pu"S4N75ID"
+$me"Thanks To"  ":"	                  $pu"E99" | "Gafar Rizky"
+$me"Youtube"    ":"	                  $pu"S4N75I"
+"""
+}
 
-reload(sys)
-
-sys.setdefaultencoding('utf8')
-
-br = mechanize.Browser()
-
-br.set_handle_robots(False)
-
-br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-
-br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
-
-def keluar():
-
-    print '\x1b[1;91m[!] Closed'
-
-    os.sys.exit()
-
-def jalan(z):
-
-    for e in z + '\n':
-
-        sys.stdout.write(e)
-
-        sys.stdout.flush()
-
-        time.sleep(0.01)
-
-logo = " \x1b[1;97m█████████\n \x1b[1;97m█▄█████▄█         \x1b[1;96m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;97m█ \x1b[1;91m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;97m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;97m█ \x1b[1;91m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝ \x1b[1;93mPRO v1.7\n \x1b[1;97m█████████         \x1b[1;96m«==========✧==========»\n \x1b[1;97m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m* \x1b[1;97mReCode  \x1b[1;91m:          \x1b[1;96m Mr.GameOver  \x1b[1;97m            ║\n \x1b[1;97m║ \x1b[1;93m* \x1b[1;97mGitHub  \x1b[1;91m:\x1b[1;92m\x1b[92mhttps://github.com/MrGameOver16\x1b[    \x1b[1;97m 
+log(){
+echo """
+   
